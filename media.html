@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            background-color: wheat;
+            width: 100%;
+            height: fit-content;
+            text-align: center;
+            padding: 30px 0px;
+            display: flex ;
+            flex-direction: column;
+justify-content: center;
+align-items: center;            
+        }
+        .second-br{
+            display: none;
+        }
+        .content{
+            width:  90%;
+            height: 80%;
+            /* margin: auto; */
+            display: grid;
+            grid-template-columns: 20% 25% 25% 25%;
+            gap: 10px;
+            margin-top: 20px;
+            border: 2px solid white;
+         
+
+        }
+        .content1{
+            background-color: red;
+            color: white;
+            height: 180px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .toggle{
+            width: 100px;
+            height: 50px;
+            background-color: blue;
+            display: flex;
+justify-content: end;
+            border-radius: 50px;
+        }
+        .rounded{
+            border-radius: 100%;
+width: 50px;
+height: 50px;
+background-color: white;
+        }
+        @media screen and (max-width: 1200px) {
+            .content{
+            grid-template-columns:  20% 20% 20% 20% 20% ;
+           justify-content: center;
+
+        }
+        .content1{
+            background-color: green;
+           
+        }
+        } 
+        @media screen and (max-width: 768px) {
+            .content{
+            grid-template-columns:  25% 25% 25%;
+           justify-content: center;
+
+        }
+        .content1{
+            background-color: blue;
+           
+        }
+        .first-br{
+            display: none;
+        }
+        .second-br{
+            display: block;
+        }
+        .container {
+            text-align: start !important;
+            /* justify-content: start; */
+            /* align-items: start; */
+        }
+        .container h1{
+            width: 80%;
+            margin: auto;
+        }
+        } 
+        @media screen and (max-width: 576px) {
+            .content{
+            grid-template-columns:  50% 50%;
+           justify-content: center;
+
+        }
+        .content1{
+            background-color: purple;
+           
+        }
+        } 
+        @media screen and (max-width: 400px) {
+            .content{
+            grid-template-columns:  100%;
+           justify-content: center;
+
+        }
+        .content1{
+            background-color: palevioletred;
+           
+        }
+        } 
+
+       
+    </style>
+</head>
+<body>
+    <!-- <h1>Hello! I'm Media Query</h1> -->
+    <div class="container">
+        <h1>RAD5 TECH <br class="first-br"> HUB <br class="second-br"> Frontend Analytics</h1>
+        <div class="content">
+            <div class="content1">Stephen
+
+                <div class="toggle">
+                    <div class="rounded"></div>
+                </div>
+            </div>
+            <div class="content1">Emeka</div>
+            <div class="content1">Emma</div>
+            <div class="content1">Faith</div>
+            <div class="content1">Destiny</div>
+            <div class="content1">Rebeka</div>
+            <div class="content1">Favor</div>
+            <div class="content1">Happiness</div>
+            <div class="content1">Ifeanyi</div>
+            <div class="content1">David</div>
+            <div class="content1">Christopher</div>
+            <div class="content1">Leroy</div>
+            <div class="content1">Caleb</div>
+            <div class="content1">Nnamdi</div>
+            <div class="content1">Confirm</div>
+            <div class="content1">Stanley</div>
+        </div>
+    </div>
+</body>
+</html>
