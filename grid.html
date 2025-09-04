@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food recipe</title>
+    <style> 
+     *{
+            margin: 0px;
+        }
+     .container{
+            background-color: rgb(241, 241, 172);
+            height:100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+     .content{
+            background-color: white;
+            width: 45%;
+            height: 80%;
+            border: 1px solid white;
+            border-radius: 20px;
+            box-shadow: 0 0  4px black;
+            padding: 10px;
+            overflow-y: scroll;
+        }
+        .content img{
+            border-radius: 20px;
+            box-shadow: 0 0 3px black;
+            object-fit:fit-cover;
+        }
+        .content p{
+            font-size: 15px;
+            font-weight:lighter;
+            color: grey;
+        }
+        .Omelette{
+            padding: 10px;
+            margin-top: 10px;
+            text-align:left;
+        }
+        .Omelette h3{
+            font-size: 30px;
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+        }
+        .Omelette p{
+            font-size: 15px;
+            font-weight:lighter;
+            color: grey;
+            margin-top: 10px;
+        }
+        .preparatiion{
+            border-radius: 10px ;
+            padding: 10px;
+            background-color: rgba(241, 213, 229, 0.945);
+            margin-top: 10px;
+        }
+        .preparatiion ul{
+            padding: 0;
+            margin-left: 20px;
+            margin-top: 5px;
+        }
+         
+        .preparatiion h2{
+            color: rgb(243, 48, 184);
+        }
+        .preparatiion li{
+            font-size: small;
+        }
+        .Ingredients{
+            border-radius: 10px ;
+            padding: 10px;
+          
+        }
+        .Ingredients ul{
+            padding: 0;
+            margin-left: 20px;
+        }
+        .Ingredients h2{
+            color: rgb(243, 48, 184);
+        }
+        .Instructions{
+            border-radius: 10px ;
+            padding: 10px;
+                     margin-top: 10px;
+        }
+        .Instructions h3{
+            color: rgb(61, 247, 169);
+        }
+        .Instructions ol{
+            padding: 0;
+            margin-left: 20px;
+            margin-top: 5px;
+        }
+        .Instructions li::marker{
+            color: red;
+        }
+        .Instructions li{
+            font-size: small;
+        }
+       
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+        <img src="egg.jpg" alt=""  width="100%" height="200px">
+        <div class="Omelette">
+            <h3>Simple Omelette Recipe</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi minima ratione dolores ipsam laborum?</p>
+        </div>
+        <div class="preparatiion">
+            <h2>Preparation time</h2>
+            <ul>
+                <li><strong>lorem</strong>  ipsum dolor sit.</li>
+                <li><strong>lorem</strong>  ipsum dolor sit.</li>
+                <li><strong>lorem</strong>  ipsum dolor sit.</li>
+            </ul>
+        </div>
+
+        <div class="Ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li><strong>lorem</strong>  ipsum dolor sit.</li>
+                <li><strong>lorem</strong>  ipsum dolor sit.</li>
+                <li><strong>lorem</strong>  ipsum dolor sit.</li>
+            </ul>
+    </div>
+    <hr>
+    <div class="Instructions">
+        <h3>Instructions</h3>
+        <ol>
+            <li><strong>Lorem, ipsum dolor</strong> sit amet consectetur adipisicing elit. Eligendi, magna Lorem ipsum dolor sit amet consectetur.</li>
+            <li><strong>Lorem, ipsum dolor</strong> sit amet consectetur adipisicing elit. Eligendi, magna Lorem ipsum dolor sit amet consectetur.</li>
+            <li><strong>Lorem, ipsum dolor</strong> sit amet consectetur adipisicing elit. Eligendi, magna Lorem ipsum dolor sit amet consectetur.</li>
+            <li><strong>Lorem, ipsum dolor</strong> sit amet consectetur adipisicing elit. Eligendi, magna Lorem ipsum dolor sit amet consectetur.</li>
+            <li><strong>Lorem, ipsum dolor</strong> sit amet consectetur adipisicing elit. Eligendi, magna Lorem ipsum dolor sit amet consectetur.</li>
+            <li><strong>Lorem, ipsum dolor</strong> sit amet consectetur adipisicing elit. Eligendi, magna Lorem ipsum dolor sit amet consectetur.</li>
+            
+        </ol>
+    </div>
+  </div>
+</body>
+</html>
